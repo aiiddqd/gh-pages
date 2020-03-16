@@ -1,0 +1,21 @@
+version: "3.7"
+
+# https://stackoverflow.com/questions/52961824/run-gatsby-with-docker-compose
+services:
+  gatsby:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    entrypoint: gatsby
+    volumes:
+      - .:/app
+
+  develop:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    command: gatsby develop -H 0.0.0.0
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
