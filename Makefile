@@ -2,21 +2,26 @@
 build:
 	docker-compose up --build
 
+
 # remove docker
 kill:
 	docker-compose kill
 	docker-compose rm -v --force
 	docker-compose down -v --remove-orphans
 
+
+# sometimes need rebuild all files
+rebuild: yarn-upgrade gb
+
+
 # make public static site
 gb:
 	docker-compose run gatsby build
 
+
 # run dev server with watcher in docker
 ds:
 	docker-compose up -d develop
-
-rebuild: yarn-install gb
 
 # test run cli
 run-gatsby:

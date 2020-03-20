@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://uptimizt.github.io/',
   pathPrefix: '/',
-  title: 'Anatoly Yumashev / GitHub Pages',
+  title: 'Anatoly Yumashev',
   subtitle: 'Web-developer: PHP, JavaScript, Golang, Symfony, Laravel, WordPress, WooCommerce.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Anatoly Yumashev',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Web-developer: PHP, JavaScript, Golang, Symfony, Laravel, WordPress, WooCommerce.',
     contacts: {
       email: 'uptimizt@gmail.com',
       facebook: '',
