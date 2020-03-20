@@ -1,7 +1,7 @@
 
 # Links  
 - Gatsby.js в деталях https://habr.com/ru/post/442298/
-
+- starter theme https://github.com/alxshelepenok/gatsby-starter-lumen
 
 A minimal, lightweight and mobile-first starter for creating blogs uses <a href="https://github.com/gatsbyjs/gatsby" target="_blank">Gatsby</a>.
 
