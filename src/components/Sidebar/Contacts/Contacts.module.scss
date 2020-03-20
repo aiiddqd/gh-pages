@@ -36,6 +36,8 @@
         &:hover,
         &:focus {
           color: $color-primary;
+          top: -1px;
+          position: relative;
         }
 
       }
