@@ -5,9 +5,9 @@ module.exports = {
   pathPrefix: '/',
   title: 'Anatoly Yumashev',
   subtitle: 'Web-developer: PHP, JavaScript, Golang, Symfony, Laravel, WordPress, WooCommerce.',
-  copyright: '© All rights reserved.',
+  copyright: '© Site powered by GatsbyJS & ReactJS.',
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 5,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
@@ -22,6 +22,10 @@ module.exports = {
     {
       label: 'Contact me',
       path: '/pages/contacts'
+    },
+    {
+      label: 'TestApp',
+      path: '/app'
     }
   ],
   author: {
