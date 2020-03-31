@@ -3,6 +3,11 @@ build:
 	docker-compose up --build
 
 
+# down dockers 
+down:
+	docker-compose down
+
+
 # remove docker
 kill:
 	docker-compose kill
