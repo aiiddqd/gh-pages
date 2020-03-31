@@ -24,8 +24,12 @@ module.exports = {
       path: '/pages/contacts'
     },
     {
+      label: 'Meditate',
+      path: '/meditate'
+    },
+    {
       label: 'TestApp',
-      path: '/app'
+      path: '/test'
     }
   ],
   author: {
