@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{y9VM:function(n,t,e){"use strict";e.r(t);var o=e("q1tI"),a=e.n(o);t.default=function(){return a.a.createElement("div",null,"Welcome to tutorial/part-one")}}}]);
-//# sourceMappingURL=component---src-pages-app-js-f4a745baf136736a7417.js.map
