@@ -15,6 +15,9 @@ kill:
 	docker-compose down -v --remove-orphans
 
 
+cli:
+	docker exec -ti develop /bin/bash
+
 # sometimes need rebuild all files
 rebuild: yarn-upgrade gb
 

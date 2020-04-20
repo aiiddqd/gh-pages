@@ -8,7 +8,7 @@ import Layout from "../components/apps/layout";
 export default () => (
   <Layout>
     <div>
-        <h1>Index page</h1>
+        <h1>M9</h1>
         <Bottombar />
     </div>
   </Layout>

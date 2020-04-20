@@ -3,14 +3,18 @@ version: "3.7"
 # https://stackoverflow.com/questions/52961824/run-gatsby-with-docker-compose
 services:
   gatsby:
+    container_name: cli
+    stdin_open: true
+    tty: true
     build:
       context: .
       dockerfile: Dockerfile.dev
-    entrypoint: gatsby
+    # entrypoint: gatsby
     volumes:
       - .:/app
 
   develop:
+    container_name: develop
     build:
       context: .
       dockerfile: Dockerfile.dev
