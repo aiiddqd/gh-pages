@@ -4,8 +4,6 @@ version: "3.7"
 services:
   gatsby:
     container_name: cli
-    stdin_open: true
-    tty: true
     build:
       context: .
       dockerfile: Dockerfile.dev
