@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { graphql, useStaticQuery, Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 
 import Bottombar from "../components/apps/bottombar";
 // import Layout from "../components/apps/layout";
 import Layout from '../components/Layout';
 
-import {Box, ButtonGroup, Button, Heading} from '@primer/components'
+import { Box, BaseStyles, Flash, Heading, LabelGroup, Label } from '@primer/components'
 
 const M9App = () => {
 
@@ -34,17 +34,27 @@ const M9App = () => {
 
   return (
     <Layout title={data.site.siteMetadata.title}>
-      <Box m={10}>
+      <BaseStyles>
+        <Box m={10}>
 
-          <Heading mb={2}>Hello, world!</Heading>
-          <p>{data.site.siteMetadata.title}</p>
-          <p>v1</p>
+            <Heading mb={2}>Hello, world!</Heading>
+            <p>{data.site.siteMetadata.title}</p>
+            <p>v1</p>
 
-          <p>Star count for the Gatsby repo: {starsCount}</p>
+            <p>Star count for the Gatsby repo: {starsCount}</p>
 
-        
-          <Bottombar />
-      </Box>
+            <Flash m={4} scheme="green"> Flash green </Flash>
+
+            <LabelGroup>
+              <Label>Default label</Label>
+              <Label bg='red.4'>Label with red background</Label>
+              <Label outline>Default outline label</Label>
+            </LabelGroup>
+
+          
+            <Bottombar />
+        </Box>
+      </BaseStyles>
 
     </Layout>
   )
