@@ -1,18 +1,13 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
+import {Box, ButtonGroup, Button, Heading} from '@primer/components'
+
 
 export default () => (
-  <div>
-    <ul>
-      <li>
-        <Link to="/">Home1</Link>
-      </li>
-      <li>
-        <Link to="https://ya.ru">Yandex</Link>
-      </li>
-      <li>
-        <Link to="https://bizzapps.ru">Menu</Link>
-      </li>
-    </ul>
-  </div>
+
+  <ButtonGroup display='block' my={2}>
+    <Button as="a" href="/">Home</Button>
+    <Button data-act="a2">Start</Button>
+    <Button>Stop</Button>
+  </ButtonGroup>
 );
