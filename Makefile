@@ -22,14 +22,14 @@ cli:
 rebuild: yarn-upgrade gb
 
 
+# run dev server with watcher in docker
+ds:
+	docker-compose up develop
+
+
 # make public static site
 gb:
 	docker-compose run gatsby build
-
-
-# run dev server with watcher in docker
-ds:
-	docker-compose up -d develop
 
 # test run cli
 run-gatsby:
